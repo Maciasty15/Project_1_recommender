@@ -7,10 +7,10 @@ Author: Maciej Barabasz
 ## Goal
 
 The aim of the project are:
-- prepare dataset of hotel recommendations for content based recommender,
-- select best features for the model,
-- find the best HR@10 in the final evaluation for recommending hotels for users,
-- compare the results against Amazon recommender.
+- prepareing dataset of hotel recommendations for content based recommender,
+- selecting best features for the model,
+- finding the best HR@10 in the final evaluation for recommended hotels for users,
+- compareing the results against Amazon recommender.
 
 ## Scores
 
