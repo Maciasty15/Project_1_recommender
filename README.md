@@ -1,6 +1,6 @@
 # Project_1_recommender
 
 
-'''bash
+```bash
 pip install rekommender
-'''
+```
