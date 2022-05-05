@@ -1,11 +1,16 @@
 # Project_1_recommender
 
-Projekt realizowany w ramach przedmiotu Systemy Rekomendacyjne na Uniwersytecie Adama Mickiewicza w Poznaniu.
-Bazujący na materiałach z repozytorium https://github.com/PiotrZiolo/recommender-systems-class 
-Autor: Maciej Barabasz 
+The project is carried out as a part of the Recommendation Systems at the University of Adam Mickiewicz in Poznań. \
+Based on materials from the repository https://github.com/PiotrZiolo/recommender-systems-class \
+Author: Maciej Barabasz 
 
 ## Goal
-Celem projektu było uzyskanie najlepszego HR@10 in the final evaluation.
+
+The aim of the project are:
+- prepare dataset of hotel recommendations for content based recommender,
+- select best features for the model,
+- find the best HR@10 in the final evaluation for recommending hotels for users,
+- compare the results against Amazon recommender.
 
 ## Scores
 
@@ -25,7 +30,7 @@ pip install hyperopt
 ## Starting up project locally
 - Create a folder on your local machine where you want stash this project. Open this folder and right click in it. From scroll menu select Git Bash here. After application opens insert this line:
 ```git
-git clone https://github.com/ant3k96/recommender_class_project1.git
+git clone https://github.com/Maciasty15/Project_1_recommender.git
 ```
 - Prepare your conda environment (instructions given for Windows, but it should be similar on other systems):
 
@@ -35,12 +40,12 @@ git clone https://github.com/ant3k96/recommender_class_project1.git
 ```bash
 conda env create --name rs-proj-env -f environment.yml
 ```
-Activate just created environment with the following command:
+- Activate just created environment with the following command:
 ```bash
  conda activate rs-proj-env	
 
 ```
-Then type:
+- Then type:
 ```
  jupyter notebook
 ```
