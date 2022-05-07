@@ -225,17 +225,8 @@ class DataPreprocessingToolkit(object):
         :return: A DataFrame with aggregated group reservations.
         :rtype: pd.DataFrame
         """
-        non_group_reservations = df.loc[df['group_id'] == "",
-                                        self.sum_columns + self.mean_columns + self.mode_columns + self.first_columns]
-        group_reservations = df.loc[df['group_id'] != ""]
-
-        aggregated_data = [group_reservations.loc[:, ["group_id"] + self.sum_columns].groupby("group_id").sum(),
-                           group_reservations.loc[:, ["group_id"] + self.mean_columns].groupby("group_id").mean(),
-                           group_reservations.loc[:, ["group_id"] + 
-                                                  self.mode_columns].groupby("group_id").agg(lambda x: x.value_counts().index[0]),
-                           group_reservations.loc[:, ["group_id"] + self.first_columns].groupby("group_id").first()]
-        
-        
+   
+            
         # Apply group by on 'group_id' and take the sum in columns given under self.sum_columns
         # Apply group by on 'group_id' and take the mean in columns given under self.mean_columns
         # Apply group by on 'group_id' and take the mode (the most frequent value - you can use the pandas agg method
