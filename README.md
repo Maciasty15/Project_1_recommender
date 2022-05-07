@@ -13,6 +13,7 @@ The aim of the project are:
 - comparing the results against Amazon recommender.
 
 ## Scores
+![2022-05-07_19h01_52](https://user-images.githubusercontent.com/25958431/167265076-82f90807-4ead-47e7-8b8a-bb65f9258c0c.png)
 
 ## Requirements
 - Anaconda 3.8
